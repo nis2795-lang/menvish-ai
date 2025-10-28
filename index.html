@@ -1,13 +1,261 @@
+<!--
+Menvish AI - Single-file responsive landing page
+Instructions:
+- Save this file as `index.html` and open in a browser to preview.
+- Swap placeholder text, links, and email addresses as needed.
+- Logo is a simple text mark; replace with an SVG or PNG if you have one.
+- Contact form uses mailto by default; replace action with your backend endpoint if you add one.
+-->
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Menvish AI — Where Vision Meets Intelligence</title>
+  <meta name="description" content="Menvish AI builds intelligent web platforms and AI-powered solutions for businesses. AI chatbots, automation, web development, and data intelligence.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- placeholder favicon -->
+
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent1:#6ee7b7; --accent2:#60a5fa; --glass: rgba(255,255,255,0.04);
+      --maxw:1100px; --radius:14px;
+      --ff-sans: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--ff-sans);
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(96,165,250,0.06), transparent),
+                  radial-gradient(900px 400px at 90% 90%, rgba(110,231,183,0.04), transparent),
+                  var(--bg);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:32px 20px;
+    }
+    .container{max-width:var(--maxw);margin:0 auto}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{display:flex;flex-direction:column}
+    .logo h1{margin:0;font-size:20px;letter-spacing:0.6px}
+    .logo small{color:var(--muted);font-size:12px}
+
+    nav{display:flex;gap:18px;align-items:center}
+    a.btn{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#042028;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    a.ghost{color:var(--muted);text-decoration:none;padding:8px}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;margin-top:30px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:var(--radius);padding:36px;backdrop-filter: blur(6px);box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    h2{font-size:32px;margin:0 0 12px}
+    p.lead{color:var(--muted);margin:0 0 20px}
+    .ctas{display:flex;gap:12px}
+
+    /* Feature list */
+    .features{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
+    .feature{background:var(--glass);padding:14px;border-radius:12px;min-width:180px}
+    .feature h4{margin:0 0 6px}
+    .feature p{margin:0;color:var(--muted);font-size:13px}
+
+    /* Right column card */
+    .right-card{padding:20px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))}
+    .stat{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+    .stat strong{font-size:20px}
+    .stat span{color:var(--muted);font-size:13px}
+
+    /* Sections */
+    section{margin-top:44px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:20px;border-radius:12px}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:20px}
+    form{display:flex;flex-direction:column;gap:12px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:12px;border-radius:10px;color:inherit}
+    input::placeholder,textarea::placeholder{color:var(--muted)}
+    button.primary{background:linear-gradient(90deg,var(--accent2),var(--accent1));border:none;color:#021017;padding:12px;border-radius:10px;font-weight:700}
+
+    footer{margin-top:44px;color:var(--muted);font-size:13px;padding:28px 0;border-top:1px solid rgba(255,255,255,0.03)}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .hero-card{order:2}
+      .right-card{order:1}
+      .grid-3{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+      nav{display:none}
+    }
+
+    /* small niceties */
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted);font-weight:600}
+  </style>
 </head>
-<body style="font-family:sans-serif;text-align:center;margin-top:10%">
-  <h1>Menvish AI</h1>
-  <p>Where Vision Meets Intelligence</p>
-  <p>🚀 Site setup successful!</p>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">
+          <h1>Menvish <span style="color:var(--accent1)">AI</span></h1>
+          <small>Where Vision Meets Intelligence</small>
+        </div>
+      </div>
+
+      <nav>
+        <a class="ghost" href="#services">Services</a>
+        <a class="ghost" href="#about">About</a>
+        <a class="ghost" href="#contact">Contact</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="hero-card">
+          <div class="chip">AI • Web • Data</div>
+          <h2>We build intelligent web platforms<br>and AI solutions that scale.</h2>
+          <p class="lead">Menvish AI helps businesses automate, analyze, and act. From AI chat assistants to data intelligence dashboards — we turn ideas into production-ready systems.</p>
+
+          <div class="ctas">
+            <a class="btn" href="#contact">Schedule a Call</a>
+            <a class="ghost" href="#services">See Services</a>
+          </div>
+
+          <div class="features">
+            <div class="feature">
+              <h4>AI Chatbots</h4>
+              <p>Custom conversational agents that automate customer journeys.</p>
+            </div>
+            <div class="feature">
+              <h4>Web Apps</h4>
+              <p>Fast, secure and maintainable web applications for growth.</p>
+            </div>
+            <div class="feature">
+              <h4>Data Intelligence</h4>
+              <p>Dashboards and ML-driven insights for better decisions.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="right-card">
+          <div class="stat"><strong>Trusted partners</strong><span>Startups & SMEs</span></div>
+          <div class="stat"><strong>Launch time</strong><span>4–8 weeks (typical MVP)</span></div>
+          <div class="stat"><strong>Support</strong><span>Maintenance & monitoring</span></div>
+
+          <div style="margin-top:16px">
+            <small style="color:var(--muted)">Quick demo request</small>
+            <div style="display:flex;gap:10px;margin-top:8px">
+              <a class="ghost" href="#contact">Book Demo</a>
+              <a class="ghost" href="#about">Meet the Founder</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <section id="services">
+        <div class="container">
+          <h3>What we do</h3>
+          <div class="grid-3" style="margin-top:12px">
+            <div class="card">
+              <h4>AI & Automation</h4>
+              <p>Design and deploy ML models, NLU pipelines, and automated flows that integrate with your systems.</p>
+            </div>
+            <div class="card">
+              <h4>Web Engineering</h4>
+              <p>End-to-end web development: scalable backends, modern frontends, and secure cloud deployments.</p>
+            </div>
+            <div class="card">
+              <h4>Data & Analytics</h4>
+              <p>From ETL to visualization — convert raw data into actionable KPIs and predictive insights.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h3>About Menvish AI</h3>
+          <p class="lead">Menvish AI was founded to make intelligent technology accessible. We combine practical engineering with human-centered design to create software that actually solves problems. Founded by Nisarg, we focus on measurable outcomes and fast iterations.</p>
+
+          <div style="display:flex;gap:12px;margin-top:18px;flex-wrap:wrap">
+            <div class="card" style="flex:1;min-width:240px">
+              <h4>Approach</h4>
+              <p>Collaborative discovery → rapid prototyping → production delivery → continuous improvement.</p>
+            </div>
+            <div class="card" style="flex:1;min-width:240px">
+              <h4>Tech stack</h4>
+              <p>Python, C++, Node.js, React, Docker, Kubernetes, PostgreSQL, Redis, and common ML frameworks.</p>
+            </div>
+            <div class="card" style="flex:0 0 260px">
+              <h4>Values</h4>
+              <p>Clarity, craftsmanship, and measurable impact.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h3>Contact</h3>
+          <div class="contact-grid" style="margin-top:12px">
+            <div>
+              <p class="lead">Ready to build? Tell us a bit about your project and we'll get back within 24 business hours.</p>
+              <p><strong>Email:</strong> <a href="mailto:hello@menvish.ai">hello@menvish.ai</a></p>
+              <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/company/menvish-ai</a></p>
+
+              <div style="margin-top:16px" class="card">
+                <h4>Sample pricing</h4>
+                <p style="margin:0;color:var(--muted)">MVPs typically start at <strong>₹2,50,000</strong> depending on scope. Contact for custom quotes.</p>
+              </div>
+            </div>
+
+            <div>
+              <form onsubmit="return handleSubmit(event)">
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="email" id="email" placeholder="Your email" required>
+                <input type="text" id="company" placeholder="Company (optional)">
+                <textarea id="message" rows="6" placeholder="Brief description of your project" required></textarea>
+                <button class="primary" type="submit">Send inquiry</button>
+                <small style="color:var(--muted);display:block;margin-top:8px">Or email us at <a href="mailto:hello@menvish.ai">hello@menvish.ai</a></small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <div>
+            © <strong>Menvish AI</strong> 2025. All rights reserved.
+          </div>
+          <div style="color:var(--muted)">Built with care in Ahmedabad • <a href="#" style="color:var(--muted);text-decoration:underline">Privacy</a></div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name || !email || !message){
+        alert('Please fill name, email and a short message.');
+        return false;
+      }
+      // Simple default behavior: open mail client with content. Replace with API call if you add backend.
+      const subject = encodeURIComponent('Menvish AI inquiry from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nCompany: ' + company + '\n\nMessage:\n' + message);
+      window.location.href = 'mailto:hello@menvish.ai?subject=' + subject + '&body=' + body;
+      return false;
+    }
+  </script>
 </body>
 </html>
