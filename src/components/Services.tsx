@@ -36,17 +36,12 @@ export function Services() {
                 </p>
                 <div className="pt-6 border-t border-slate-100">
                   <ul className="space-y-3">
-                    {service.features.slice(0, 4).map((feature, i) => (
+                    {service.features.map((feature, i) => (
                       <li key={i} className="text-sm font-medium text-slate-700 flex items-start gap-3">
                         <span className="text-blue-500 mt-0.5 text-xs">◆</span>
                         <span>{feature}</span>
                       </li>
                     ))}
-                    {service.features.length > 4 && (
-                      <li className="text-sm font-medium text-slate-500 flex items-center gap-3 pt-2">
-                        <span>+ {service.features.length - 4} more capabilities</span>
-                      </li>
-                    )}
                   </ul>
                 </div>
               </motion.div>
