@@ -6,7 +6,7 @@ export function About() {
   return (
     <section id="about" className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -58,6 +58,15 @@ export function About() {
                 <div>
                   <h4 className="text-slate-900 font-semibold mb-1 text-lg">Serving Clients Worldwide</h4>
                   <p className="text-slate-600">Transparent communication and professional execution across timezones.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-5">
+                <div className="w-14 h-14 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+                  <div className="w-3 h-3 rounded-full bg-emerald-600" />
+                </div>
+                <div>
+                  <h4 className="text-slate-900 font-semibold mb-1 text-lg">End-to-End Solutions</h4>
+                  <p className="text-slate-600">From initial architecture and design to deployment and ongoing support.</p>
                 </div>
               </div>
             </div>

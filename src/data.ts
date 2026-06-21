@@ -14,7 +14,8 @@ import {
   Server, 
   Settings, 
   TerminalSquare, 
-  Wrench
+  Wrench,
+  ShoppingCart
 } from "lucide-react";
 
 export const companyInfo = {
@@ -145,6 +146,11 @@ export const industries = [
     title: "Data & Analytics Businesses",
     description: "Creating systems that process and visualize information effectively.",
     icon: Database
+  },
+  {
+    title: "E-Commerce & Retail",
+    description: "Designing robust, high-traffic platforms and inventory management solutions.",
+    icon: ShoppingCart
   }
 ];
 
@@ -189,7 +195,7 @@ export const capabilitiesDetails = [
 export const techStack = [
   {
     category: "Languages",
-    items: ["C++", "Python", "JavaScript", "TypeScript"]
+    items: ["C++", "Python", "JavaScript", "TypeScript", "Rust"]
   },
   {
     category: "Backend Technologies",

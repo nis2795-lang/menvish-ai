@@ -55,20 +55,6 @@ export function Hero() {
             </a>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-4"
-        >
-          {capabilitiesDetails.slice(0, 4).map((cap, i) => (
-            <div key={i} className="bg-white/80 border border-slate-200 p-5 rounded-2xl backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="font-mono text-xs text-blue-600 font-semibold mb-3">0{i + 1}</div>
-              <div className="text-sm font-medium text-slate-800">{cap}</div>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
