@@ -62,21 +62,6 @@ export const services = [
     ]
   },
   {
-    id: "modern-cpp",
-    title: "Modern C++ Development",
-    description: "Expert engineering using modern C++ standards focused on performance, maintainability, and scalability.",
-    icon: TerminalSquare,
-    features: [
-      "C++17 / C++20",
-      "STL Optimization",
-      "Memory Management",
-      "Lock-Free Programming",
-      "Multithreading",
-      "Concurrent Systems",
-      "Performance Optimization"
-    ]
-  },
-  {
     id: "custom-software",
     title: "Custom Software Development",
     description: "Build software solutions tailored to your business requirements.",
@@ -131,65 +116,6 @@ export const services = [
       "SaaS Products",
       "API-Driven Applications",
       "Responsive User Interfaces"
-    ]
-  },
-  {
-    id: "backend-api",
-    title: "Backend & API Engineering",
-    description: "Robust backend systems designed for reliability and growth.",
-    icon: Server,
-    features: [
-      "REST APIs",
-      "Microservices",
-      "Distributed Systems",
-      "Database Design",
-      "Cloud Integrations",
-      "Authentication & Security"
-    ]
-  },
-  {
-    id: "performance",
-    title: "Performance Engineering & Optimization",
-    description: "Improve system performance by identifying and eliminating bottlenecks.",
-    icon: Cpu,
-    features: [
-      "CPU Optimization",
-      "Memory Optimization",
-      "Database Tuning",
-      "Latency Reduction",
-      "Throughput Improvements",
-      "System Profiling",
-      "Linux Performance Engineering"
-    ]
-  },
-  {
-    id: "debugging",
-    title: "Debugging & Problem Solving",
-    description: "Resolve complex technical challenges across existing applications and infrastructure.",
-    icon: Wrench,
-    features: [
-      "Production Issues",
-      "Performance Bottlenecks",
-      "Concurrency Problems",
-      "Memory Leaks",
-      "Scalability Challenges",
-      "System Instability",
-      "Architecture Issues",
-      "Database Performance Problems"
-    ]
-  },
-  {
-    id: "legacy",
-    title: "Legacy Application Modernization",
-    description: "Modernize aging software systems without disrupting business operations.",
-    icon: RefreshCcw,
-    features: [
-      "Architecture Refactoring",
-      "Platform Upgrades",
-      "Technology Migration",
-      "Codebase Modernization",
-      "Performance Enhancements",
-      "Maintainability Improvements"
     ]
   }
 ];
