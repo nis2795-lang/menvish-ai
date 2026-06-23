@@ -19,10 +19,6 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-sm font-mono text-blue-700 mb-8 mx-auto md:mx-0">
-              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-              Software Architecture & Engineering
-            </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 mb-6 leading-[1.1]">
               Engineering Systems <br className="hidden md:block" />
               <span className="text-blue-700">

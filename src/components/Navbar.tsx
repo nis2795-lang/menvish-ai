@@ -19,6 +19,7 @@ export function Navbar() {
   const navLinks = [
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
+    { label: 'Portfolio', href: '#portfolio' },
     { label: 'Industries', href: '#industries' },
     { label: 'Contact', href: '#contact' },
   ];
@@ -37,7 +38,7 @@ export function Navbar() {
             <a 
               key={link.label}
               href={link.href} 
-              className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+              className="text-sm font-semibold text-slate-800 hover:text-blue-600 transition-colors"
             >
               {link.label}
             </a>
@@ -52,7 +53,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-slate-600 hover:text-slate-900"
+          className="md:hidden text-slate-800 hover:text-blue-600 focus:outline-none"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X /> : <Menu />}
@@ -74,7 +75,7 @@ export function Navbar() {
                 key={link.label}
                 href={link.href} 
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block text-slate-600 hover:text-blue-600 font-medium py-2"
+                className="block text-slate-800 hover:text-blue-600 font-semibold py-2"
               >
                 {link.label}
               </a>

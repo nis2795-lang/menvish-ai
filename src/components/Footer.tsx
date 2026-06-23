@@ -28,6 +28,7 @@ export function Footer() {
               <li><a href="#home" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">Home</a></li>
               <li><a href="#about" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">About Torvexa Technologies</a></li>
               <li><a href="#services" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">Services</a></li>
+              <li><a href="#portfolio" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">Portfolio</a></li>
               <li><a href="#industries" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">Industries</a></li>
               <li><a href="#contact" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">Contact Us</a></li>
             </ul>
@@ -43,7 +44,9 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
-                <a href={`mailto:${companyInfo.email}`} className="text-slate-600 hover:text-blue-600 transition-colors text-sm">{companyInfo.email}</a>
+                <div className="flex-1 min-w-0">
+                  <a href={`mailto:${companyInfo.email}`} className="text-slate-600 hover:text-blue-600 transition-colors text-sm break-words inline-block max-w-full">{companyInfo.email}</a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />

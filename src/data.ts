@@ -28,7 +28,7 @@ export const companyInfo = {
   globalReach: "Serving clients globally.",
   email: "contact@torvexatechnologies.com",
   linkedin: "www.linkedin.com/company/torvexa-technologies/",
-  whatsapp: "+91-8401015260",
+  whatsapp: "+91-9265243375",
   foundedVision: "To build software systems that are reliable, scalable, and engineered for long-term success.",
 };
 

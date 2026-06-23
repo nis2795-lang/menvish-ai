@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { industries, techStack } from '../data';
+import { industries, techStack, companyInfo } from '../data';
 import { CheckCircle2, Target, Activity, TrendingUp, Handshake, CalendarDays, Users, ArrowRight } from 'lucide-react';
 
 export function Features() {
@@ -113,7 +113,7 @@ export function Features() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <a href={`https://wa.me/918401015260`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-600/20 group">
+                <a href={`https://wa.me/${companyInfo.whatsapp?.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-600/20 group">
                   Book Your Meeting
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
