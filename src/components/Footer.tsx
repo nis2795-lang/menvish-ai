@@ -26,7 +26,7 @@ export function Footer() {
             <h3 className="font-bold text-slate-900 mb-6 uppercase tracking-wider text-sm">Quick Links</h3>
             <ul className="space-y-4">
               <li><a href="#home" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">Home</a></li>
-              <li><a href="#about" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">About Menvish AI</a></li>
+              <li><a href="#about" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">About Torvexa Technologies</a></li>
               <li><a href="#services" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">Services</a></li>
               <li><a href="#industries" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">Industries</a></li>
               <li><a href="#contact" className="text-slate-600 hover:text-blue-600 transition-colors text-sm">Contact Us</a></li>

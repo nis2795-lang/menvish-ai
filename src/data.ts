@@ -2,6 +2,7 @@ import {
   Activity, 
   BarChart3, 
   Briefcase, 
+  Bot,
   Code2, 
   Cpu, 
   Database, 
@@ -19,14 +20,14 @@ import {
 } from "lucide-react";
 
 export const companyInfo = {
-  name: "Menvish AI",
+  name: "Torvexa Technologies",
   tagline: "Engineering Systems Where Performance Matters",
-  shortDesc: "Menvish AI is a specialized software engineering consultancy helping businesses build, optimize, and scale high-performance software systems.",
+  shortDesc: "Torvexa Technologies is a specialized software engineering consultancy helping businesses build, optimize, and scale high-performance software systems.",
   longDesc: "From low-latency trading infrastructure and market data platforms to custom business applications, CRM systems, dashboards, and enterprise software, we deliver reliable technology solutions designed for performance, scalability, and long-term success. We partner with startups, fintech companies, trading firms, and enterprises to solve complex technical challenges and transform ideas into production-ready systems.",
   location: "Ahmedabad, India",
   globalReach: "Serving clients globally.",
-  email: "menvishai.tech@gmail.com",
-  linkedin: "www.linkedin.com/company/menvish-ai/",
+  email: "contact@torvexatechnologies.com",
+  linkedin: "www.linkedin.com/company/torvexa-technologies/",
   whatsapp: "+91-8401015260",
   foundedVision: "To build software systems that are reliable, scalable, and engineered for long-term success.",
 };
@@ -78,31 +79,33 @@ export const services = [
     ]
   },
   {
-    id: "crm",
-    title: "CRM & Business Management Solutions",
-    description: "Streamline operations through custom-built CRM and workflow management platforms.",
+    id: "business-analytics",
+    title: "Business Management & Analytics Solutions",
+    description: "Streamline operations and gain actionable insights through custom CRM platforms, workflow automation, dashboards, and reporting systems.",
     icon: Briefcase,
     features: [
       "Customer Relationship Management (CRM)",
-      "Lead Management Systems",
-      "Sales Tracking Platforms",
-      "Workflow Automation",
-      "Business Process Management",
-      "Internal Operations Portals"
+      "Lead & Sales Management Systems",
+      "Workflow & Business Process Automation",
+      "Internal Operations Portals",
+      "Executive & Operational Dashboards",
+      "Real-Time Monitoring & Reporting Platforms",
+      "Business Intelligence & Data Visualization"
     ]
   },
   {
-    id: "dashboards",
-    title: "Dashboards & Analytics Platforms",
-    description: "Transform business data into actionable insights through powerful dashboards and reporting systems.",
-    icon: BarChart3,
+    id: "ai-automation",
+    title: "AI-Powered Automation & Agentic Solutions",
+    description: "Leverage AI-driven automation, intelligent assistants, and autonomous workflows to improve efficiency, customer engagement, and business operations.",
+    icon: Bot,
     features: [
-      "Executive Dashboards",
-      "Operational Dashboards",
-      "Real-Time Monitoring Systems",
-      "Business Intelligence Platforms",
-      "Reporting Systems",
-      "Data Visualization Tools"
+      "AI Chatbots & Virtual Assistants",
+      "Agentic AI Solutions",
+      "Customer Support Automation",
+      "Lead Qualification & Routing",
+      "AI Workflow Automation",
+      "Knowledge Base Assistants",
+      "Document Processing & Data Extraction"
     ]
   },
   {
