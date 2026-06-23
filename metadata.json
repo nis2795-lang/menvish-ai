@@ -1,6 +1,6 @@
 {
-  "name": "Menvish AI",
-  "description": "Engineering Systems Where Performance Matters. Specialized software engineering consultancy for low-latency trading infrastructure, distributed systems, and modern C++ development.",
+  "name": "Torvexa Technologies",
+  "description": "Engineering Systems Where Performance Matters. Specialized software engineering consultancy for low-latency systems, distributed applications, and modern development.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
